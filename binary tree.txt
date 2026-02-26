@@ -221,6 +221,20 @@
                 InOrder(node.Right);
             }
         }
+
+        private int GetCount(Node node)
+        {
+            if (node == null)
+            {
+                return 0;
+            }
+            return 1 + GetCount(node.Left) + GetCount(node.Right);
+        }
+        
+        public int Count()
+        {
+            return GetCount(root);
+        }
     }
 
         static void Main(string[] args)
