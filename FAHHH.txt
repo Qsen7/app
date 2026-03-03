@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftUni Mirror Websites</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+        }
+
+        .container {
+            width: 870px;
+            background-color: #efefef;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card a {
+            font-size: 13px;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="page1.html">page1</a>
+        <a href="page2.html">page2</a>
+        <a href="page3.html">page3</a>
+        <a href="page4.html">page4</a>
+        <a href="page5.html">page5</a>
+        <a href="page6.html">page6</a>
+    </div>
+    <div class="container">
+        <h1>SoftUni Mirror Websites</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h2>Fun University</h2>
+                <a href="http://example.com/" target="_blank">http://example.com/</a>
+                <img src="fun-university.png"/>
+                <p>
+                    The place where we will talk openly about Software, Education,
+                    student life and how to make the best combination between alcohol
+                    and softdrink. In the "News" section, you can read the latest
+                    pseudo-innovations in software industry.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Silikon University</h2>
+                <a href="http://example.com/" target="_blank">http://example.com/</a>
+                <img src="svezis.png"/>
+                <p>
+                    Our cause is to make Bulgaria the Silicon Valley of Europe! SILIKON
+                    UNIVERSITY – your way to success! The teaching staff is very
+                    carefully selected. It consists of practitioners with excellent
+                    SINGING and BOOTY-SHAKIN' skills.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Soft Funny</h2>
+                <a href="http://example.com/" target="_blank">http://example.com/</a>
+                <img src="soft-funny.png"/>
+                <p>
+                    The "Pyre Team" is not responsible for any mental or physical damage
+                    due to watching, reading or listening to the materials presented on
+                    this website.
+                </p>
+            </div>
+        </div>
+
+        <footer>SOFTWARE UNIVERSITY, SOFIA</footer>
+    </div>
+</body>
+
+</html>
