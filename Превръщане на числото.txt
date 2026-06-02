@@ -82,3 +82,60 @@
             Console.WriteLine("Hex: " + hexaResult);
         }
     }
+
+От шестнадесетично на десетично на двоично
+            string hex = Console.ReadLine();
+            
+            int dec = 0;
+            int mult = 1;
+            
+            for(int i = hex.Length - 1; i >= 0; i--)
+            {
+                if(hex[i] == 'A')
+                {
+                    dec += 10 * mult;
+                }
+                else if(hex[i] == 'B')
+                {
+                    dec += 11 * mult;
+                }
+                else if(hex[i] == 'C')
+                {
+                    dec += 12 * mult;
+                }
+                else if(hex[i] == 'D')
+                {
+                    dec += 13 * mult;
+                }
+                else if(hex[i] == 'E')
+                {
+                    dec += 14 * mult;
+                }
+                else if(hex[i] == 'F')
+                {
+                    dec += 15 * mult;
+                }
+                else
+                {
+                    dec += int.Parse(hex[i].ToString()) * mult;
+                }
+            
+                mult *= 16;
+            }
+            
+            string bin = "";
+            
+            while(dec > 0)
+            {
+                bin += dec % 2;
+                dec /= 2;
+            }
+            
+            string finalBin = "";
+            
+            for(int i = bin.Length - 1; i >= 0; i--)
+            {
+                finalBin += bin[i];
+            }
+            
+            Console.WriteLine(finalBin);
